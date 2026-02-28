@@ -1,6 +1,6 @@
 {
   "name": "gm-codex",
-  "version": "2.0.25",
+  "version": "2.0.26",
   "description": "State machine agent with hooks, skills, and automated git enforcement",
   "author": "AnEntrypoint",
   "license": "MIT",
@@ -26,17 +26,24 @@
   "files": [
     "hooks/",
     "agents/",
+    "skills/",
+    "scripts/",
     ".github/",
     "README.md",
     "CLAUDE.md",
     ".mcp.json",
     "plugin.json",
     "cli.js",
+    "install.js",
     "pre-tool-use-hook.js",
     "session-start-hook.js",
     "prompt-submit-hook.js",
     "stop-hook.js",
-    "stop-hook-git.js"
+    "stop-hook-git.js",
+    "LICENSE",
+    ".gitignore",
+    ".editorconfig",
+    "CONTRIBUTING.md"
   ],
   "keywords": [
     "codex",
