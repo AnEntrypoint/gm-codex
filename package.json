@@ -1,6 +1,6 @@
 {
   "name": "gm-codex",
-  "version": "2.0.85",
+  "version": "2.0.86",
   "description": "State machine agent with hooks, skills, and automated git enforcement",
   "author": "AnEntrypoint",
   "license": "MIT",
@@ -53,10 +53,6 @@
     "automation",
     "gm"
   ],
-  "dependencies": {
-    "mcp-thorns": "latest",
-    "codebasesearch": "latest"
-  },
   "scripts": {
     "postinstall": "node scripts/postinstall.js"
   }
