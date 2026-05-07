@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "description": "Hook spec for gm Codex extension",
+  "envVar": "CODEX_PLUGIN_ROOT",
+  "plugkitInvoker": "node",
+  "events": [
+    {
+      "eventKey": "PreToolUse",
+      "commands": [
+        {
+          "kind": "plugkit",
+          "subcommand": "pre-tool-use",
+          "timeout": 3600
+        }
+      ]
+    },
+    {
+      "eventKey": "PostToolUse",
+      "commands": [
+        {
+          "kind": "plugkit",
+          "subcommand": "post-tool-use",
+          "timeout": 5000
+        }
+      ]
+    },
+    {
+      "eventKey": "SessionStart",
+      "commands": [
+        {
+          "kind": "plugkit",
+          "subcommand": "session-start",
+          "timeout": 180000
+        }
+      ]
+    },
+    {
+      "eventKey": "UserPromptSubmit",
+      "commands": [
+        {
+          "kind": "plugkit",
+          "subcommand": "prompt-submit",
+          "timeout": 60000
+        }
+      ]
+    },
+    {
+      "eventKey": "Stop",
+      "commands": [
+        {
+          "kind": "plugkit",
+          "subcommand": "stop",
+          "timeout": 15000
+        },
+        {
+          "kind": "plugkit",
+          "subcommand": "stop-git",
+          "timeout": 210000
+        }
+      ]
+    }
+  ]
+}
